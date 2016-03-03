@@ -5,3 +5,32 @@ Text to Blue
 Font Size
 Border
 Round Border*/
+
+.Blue {
+  color: blue;
+}
+
+.Large {
+  font-size: 1.5em;
+}
+
+.Border {
+  border: 1px solid black;
+}
+
+.Round {
+  border-radius: 3px;
+}
+
+.Bold {
+  font-weight: bold;
+}
+
+.Italic {
+  font-style: italic;
+}
+
+.Block {
+  display: block;
+}
+

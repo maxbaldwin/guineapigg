@@ -26,3 +26,7 @@ title.addEventListener("mouseover", function() {
 title.addEventListener("mouseleave", function() {
   output.innerHTML = "You left me!";
 })
+
+colorbutton.addEventListener("click", function() {
+  guineapig.classList.toggle("Blue");
+  })
