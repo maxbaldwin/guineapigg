@@ -9,7 +9,7 @@ var round = document.getElementById("add-rounding");
 var header = document.getElementById("page-header");
 var title = document.getElementById("page-title");
 var article = document.getElementsByClassName("article-section"); //always returns array
-
+var buttons = document.getElementsByTagName("button")
 // console.log(output);
 
 //Event Listener, 5 click, 1 mouse over, 1 mouse out
@@ -23,6 +23,7 @@ title.addEventListener("mouseover", function() {
   output.innerHTML = "You moved your mouse over the header";
 })
 
+//mouseleave is listening to title
 title.addEventListener("mouseleave", function() {
   output.innerHTML = "You left me!";
 })
@@ -30,3 +31,32 @@ title.addEventListener("mouseleave", function() {
 colorbutton.addEventListener("click", function() {
   guineapig.classList.toggle("Blue");
   })
+
+large.addEventListener("click", function() {
+  guineapig.classList.toggle("Large");
+})
+
+border.addEventListener("click", function() {
+  guineapig.classList.toggle("Border");
+})
+
+round.addEventListener("click", function() {
+  guineapig.classList.toggle("Round");
+})
+
+//Doing number 9/10 here
+for (var i = 0; i < article.length; i++) {
+  // console.log(article);
+  article[0].classList.add("Bold");
+  article[article.length-1].classList.add("Italic");
+}
+
+//Doing number 11 here
+for (var i = 0; i < buttons.length; i++){
+  // console.log(buttons);
+  buttons[i].classList.add("Block");
+}
+
+
+
+
