@@ -14,9 +14,9 @@ var buttons = document.getElementsByTagName("button")
 
 //Event Listener, 5 click, 1 mouse over, 1 mouse out
 
-// article.addEventListener("click", Function()) {
+// article.addEventListener("click", function() {
 //   output.innerHTML = "You clicked on the {text of the section} section";
-// }
+// })
 
 //mouseover is listening to title
 title.addEventListener("mouseover", function() {
@@ -57,6 +57,10 @@ for (var i = 0; i < buttons.length; i++){
   buttons[i].classList.add("Block");
 }
 
-
+//Adding the mirroring here to answer number 4
+keypress.addEventListener("keyup", function(Event) {
+  // console.log(Event);
+  output.innerHTML = keypress.value;
+})
 
 
