@@ -13,10 +13,12 @@ var buttons = document.getElementsByTagName("button")
 // console.log(output);
 
 //Event Listener, 5 click, 1 mouse over, 1 mouse out
+for (var i = 0; i <article.length; i++) {
 
-// article.addEventListener("click", function() {
-//   output.innerHTML = "You clicked on the {text of the section} section";
-// })
+article[i].addEventListener("click", function(select) {
+  console.log(select);
+  output.innerHTML = "You clicked on the" + select.currentTarget.innerHTML  + "section";
+})}
 
 //mouseover is listening to title
 title.addEventListener("mouseover", function() {
